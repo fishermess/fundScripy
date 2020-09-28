@@ -4,7 +4,7 @@ from pgdb import Connection
 from tqdm import tqdm
 
 if __name__ == "__main__":
-    fp = open("./所有企业信息.json","w")
+    fp = open("TotalOrgInformation.json", "w")
     org_list = []
     for page1 in tqdm(range(21),desc="获取所有机构信息"):  # 首页分页
         #print("第{}页".format(page1 + 1))
