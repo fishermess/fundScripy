@@ -1,0 +1,10 @@
+create table Org(
+	id serial primary key,
+	orgname varchar(255) not null,
+	orgType varchar(255) not null,
+	extworkertotalnum integer not null,
+	opernum integer not null,
+	salesmannum integer not null,
+	fundmangernum integer not null,
+	investmentmangernum integer not null
+)
