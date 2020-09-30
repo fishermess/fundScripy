@@ -5,14 +5,14 @@ import os
 from tqdm import tqdm
 if __name__ == "__main__":
     fa = face_alignment.FaceAlignment(face_alignment.LandmarksType._2D,device='cpu',flip_input=False)
-    filename_list = os.listdir("/home/deploy/PycharmProjects/基金爬虫/Scripy/pg_data/")
+    filename_list = os.listdir("../pg_data/")
     #print(filename_list)
     for filename in tqdm(filename_list):
         try:
-            input = io.imread('/home/deploy/PycharmProjects/基金爬虫/Scripy/pg_data/'+filename)
+            input = io.imread('../pg_data/'+filename)
             preds = fa.get_landmarks(input)
             #print(preds[0])
-            img = cv2.imread('/home/deploy/PycharmProjects/基金爬虫/Scripy/pg_data/'+filename)
+            img = cv2.imread('../pg_data/'+filename)
             #x= (max([i[0] for i in preds[0]])+min([i[0] for i in preds[0]]))/2
             #y= (max([i[1] for i in preds[0]])+min([i[1] for i in preds[0]]))/2
             x1 = max(i[0] for i in preds[0])
