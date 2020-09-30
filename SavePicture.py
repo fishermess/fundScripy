@@ -6,7 +6,7 @@ headers = {
         'Content-Type': 'application/json'
     }
 #获取json数据列表
-fp1 = open("./企业及员工信息汇总.json")
+fp1 = open("TotalMemberInformation.json")
 total_list = json.load(fp1)
 fp1.close()
 

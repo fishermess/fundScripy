@@ -6,7 +6,7 @@ from pgdb import Connection
 if __name__ == "__main__":
     #获取所有企业ID、
 
-    fp = open("./企业及员工信息汇总.json",'w')
+    fp = open("TotalMemberInformation.json", 'w')
     user_information_list = []
     userid_list = []#用于存储所有企业ID
     headers = {

@@ -3,7 +3,7 @@ from pgdb import Connection
 from tqdm import tqdm
 
 if __name__ == "__main__":
-    fp = open("./企业及员工信息汇总.json",'r')
+    fp = open("TotalMemberInformation.json", 'r')
     Member_list = json.load(fp)
 
     #导入数据库
